@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TPushSocket</string>
+    <string name="push_socket_service_activity">Hello,This is Push Socket Service</string>
+    <string name="pull_json_service_activity">Hello ,This is Pull json Service</string>
+    <string name="settings">Settings</string>
+    
+    <string name="close_push_service">Close Push Service</string>
+    <string name="open_push_service">Open Push Service</string>
+    <string name="close_pull_service">Close Pull Service</string>
+    <string name="open_pull_service">Open Pull Service</string>
+    
+    <string name="alert_not_ip_address">it\'s not ip address</string>
+    <string name="alert_push_open">the push service is runing</string>
+    <string name="alert_push_close">the push service is stop</string>
+    <string name="alert_pull_open">the pull service is runing</string>
+    <string name="alert_pull_close">the pull service is stop</string>
+</resources>
