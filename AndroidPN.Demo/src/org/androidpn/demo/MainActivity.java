@@ -49,9 +49,9 @@ public class MainActivity extends Activity {
 		jsonReq.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(MainActivity.this,
+				/*Intent intent = new Intent(MainActivity.this,
 						JsonRequsetActivity.class);
-				startActivity(intent);
+				startActivity(intent);*/
 			}
 		});
 	}

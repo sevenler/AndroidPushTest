@@ -38,8 +38,6 @@ public final class ServiceManager {
 
     private SharedPreferences sharedPrefs;
 
-    private Properties props;
-
     private String version = "0.5.0";
 
     private String apiKey;
@@ -69,17 +67,17 @@ public final class ServiceManager {
         //        //            throw new RuntimeException();
         //        //        }
 
-        //props = loadProperties();
-       /* apiKey = props.getProperty("apiKey", "");
-        xmppHost = props.getProperty("xmppHost", "127.0.0.1");
-        xmppPort = props.getProperty("xmppPort", "5222");*/
+        /* props = loadProperties();
+         this.apiKey = props.getProperty("apiKey", "");
+         this.xmppHost = props.getProperty("xmppHost", "127.0.0.1");
+         this.xmppPort = props.getProperty("xmppPort", "5222");*/
         
         this.apiKey = apiKey;
         this.xmppHost = xmppHost;
         this.xmppPort = xmppPort;
-        Log.i(LOGTAG, "apiKey=" + apiKey);
-        Log.i(LOGTAG, "xmppHost=" + xmppHost);
-        Log.i(LOGTAG, "xmppPort=" + xmppPort);
+        Log.i(LOGTAG, "apiKey=" + this.apiKey);
+        Log.i(LOGTAG, "xmppHost=" + this.xmppHost);
+        Log.i(LOGTAG, "xmppPort=" + this.xmppPort);
 
         sharedPrefs = context.getSharedPreferences(
                 Constants.SHARED_PREFERENCE_NAME, Context.MODE_PRIVATE);

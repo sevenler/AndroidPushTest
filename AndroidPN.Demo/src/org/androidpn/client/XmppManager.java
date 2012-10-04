@@ -290,10 +290,13 @@ public class XmppManager {
         public void run() {
             Log.i(LOGTAG, "ConnectTask.run()...");
 
+            System.out.println("---------111-----------");
             if (!xmppManager.isConnected()) {
                 // Create the configuration for this new connection
                 ConnectionConfiguration connConfig = new ConnectionConfiguration(
                         xmppHost, xmppPort);
+                
+                Log.i(LOGTAG, "connecting running at " + xmppHost + ":" + xmppPort);
                 // connConfig.setSecurityMode(SecurityMode.disabled);
                 connConfig.setSecurityMode(SecurityMode.required);
                 connConfig.setSASLAuthenticationEnabled(false);
@@ -303,6 +306,7 @@ public class XmppManager {
                 xmppManager.setConnection(connection);
 
                 try {
+                	System.out.println("----------2222-----------");
                     // Connect to the server
                     connection.connect();
                     Log.i(LOGTAG, "XMPP connected successfully");

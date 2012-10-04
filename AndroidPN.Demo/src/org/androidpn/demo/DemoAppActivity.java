@@ -19,7 +19,6 @@ import org.androidpn.client.ServiceManager;
 import org.androidpn.demo.R;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -37,7 +36,7 @@ public class DemoAppActivity extends Activity {
 	private Button okButton;
 	private TextView status;
 	private String apiKey = "1234567890";
-	private String xmppHost = "192.168.0.102";
+	private String xmppHost = "192.168.0.105";
 	private String xmppPort = "5222";
 	private boolean isStart = false;
 
